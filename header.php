@@ -47,6 +47,7 @@ li a {
     <li><a href="pocetna.php">Početna</a></li> 
     <li><a href="casovi.php">Časovi</a></li> 
     <li><a href="">Nastavnici</a></li>
+    <li><a href="iskustva.php">Iskustva</a></li>
     <li><a href="kontakt.php">Kontakt</a></li>
   </ul>
 </nav>

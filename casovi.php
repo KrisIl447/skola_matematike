@@ -27,10 +27,11 @@
 <h2>Online časovi</h2>
 <p>Online časovi su dostupni svima i sve što je potrebno jesta da se prijaviš i mi ćemo te
 kontaktirati isti dan.</p>
-<img src="laptop.jpg" alt="" width="600" height="400">
+<img src="imgs/laptop.jpg" alt="" width="600" height="400">
 
 <h2>Časovi uživo</h2>
 <p>Časovi uživo, vaši omiljeni, se održavaju na teritoriji Beograda. Moguće je da
 naš nastavnik dođe kod tebe ili ti kod nas.</p>
+<?php include 'footer.php'; ?>
 </body>
 </html>

@@ -10,17 +10,8 @@ include_once 'includes/dbh.php';
     <title>Document</title>
 </head>
 <body>
-<div>
-<p>Math is cool5 je privatna škola matematike koja pomaže učenicima da savladaju gradivo
- koje uče u školi i dobiju ocene koje žele. Već godinu dana vredno radimo i zajedno postižemo
- odlične rezultate. </p>
- <img src="math.jpg" alt="">
- <hr>
 <h4>Potrebna ti je pomoć oko matematike? <br>
 <i>Prijavi se u formi ispod:</i></h4>
-
-</div>
-
 <form action="includes/signup.inc.php" method="POST">
 <input type="text", name="idu", placeholder="IDUcenika">
 <br>
