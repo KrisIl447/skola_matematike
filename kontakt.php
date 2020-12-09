@@ -20,40 +20,7 @@ body {
   text-align: center;
 
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
 
-li {
-    float: left;
-}
-
-
-li#right {
-    float: right;
-}
-li#right a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 50px;
-    text-decoration: none;
-    
-}
-
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 80px;
-    text-decoration: none;
-    
-}
 #kontInfo{
     font-family: 'Bowlby One SC', cursive;
     width:40%;
@@ -78,14 +45,7 @@ li a {
 
 
 </style>
-<nav>
-             <ul>
-                <li><a href="header.php">Škola matematike</a></li>
-                <li><a href="casovi.php">Časovi</a></li> 
-                <li><a href="nastavnici.php">Nastavnici</a></li>
-                <li><a href="kontakt.php">Kontakt</a></li>
-             </ul>
-            </nav>
+<?php include 'header.php'; ?>
 <div id="map">
         <p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2833.03052013105!2d20.500630715045965!3d44.759792288188805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70df0e794f55%3A0x4530c0224a40f8cc!2z0JLQvtGY0LLQvtC00LUg0JLQu9Cw0YXQvtCy0LjRm9CwIDQ3LCDQkdC10L7Qs9GA0LDQtCwg0KHRgNCx0LjRmNCw!5e0!3m2!1ssr!2sba!4v1607270137535!5m2!1ssr!2sba" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
@@ -132,6 +92,8 @@ li a {
             email: <span id="e1">ikristina523@gmail.com</span><br>
         </p>
     </div>
+    
+    <?php include 'footer.php'; ?>
 </body>
 
 </html>

@@ -22,7 +22,7 @@
           <li><a href="https://www.linkedin.com/in/uefa-champions-league-783110b6" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
         </ul>
       
-        All rights reserved, Math is cool5 #mathiscool5
+       <i> All rights reserved, Math is cool5 #mathiscool5</i>
         </div>
       </footer>
       

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
     <link rel="stylesheet" href="gallery-grid.css">
     <link rel="stylesheet" href="gallery-grid.css">
-    <title>Galerija</title>
+    <title>Iskustva</title>
 </head>
 <style>body {
   background: linear-gradient(white,gray);
@@ -33,32 +33,32 @@
     
             <div class="row">
                 <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="slike/f1.jpg">
+                    <a class="lightbox" href="imgs/slika.jpg">
                         <img src="imgs/slika.jpg" alt="sl1">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="slike/f2.jpg">
+                    <a class="lightbox" href="imgs/slika1.jpg">
                         <img src="imgs/slika1.jpg" alt="sl2">
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <a class="lightbox" href="slike/f3.jpg">
+                    <a class="lightbox" href="imgs/slika2.jpg">
                         <img src="imgs/slika2.jpg" alt="sl3">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="slike/f4.jpg">
+                    <a class="lightbox" href="imgs/slika3.jpg">
                         <img src="imgs/slika3.jpg" alt="sl4">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="slike/f5.jpg">
+                    <a class="lightbox" href="imgs/slika4.jpg">
                         <img src="imgs/slika4.jpg" alt="sl5">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="slike/f6.jpg">
+                    <a class="lightbox" href="imgs/slika5.jpg">
                         <img src="imgs/slika5.jpg" alt="sl6">
                     </a>
                 </div>
