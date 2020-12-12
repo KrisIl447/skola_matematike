@@ -18,7 +18,7 @@ body {
   padding-bottom: 100px;
   font-size:15px;
   text-align: center;
-
+  margin: 15px 300px 5px 200px;
 }
 #informacije{
     width: 100%;
@@ -74,7 +74,7 @@ body {
                 koje uče u školi i dobiju ocene koje žele. Već godinu dana vredno radimo i zajedno postižemo
                 odlične rezultate. Radimo sa decom iz Srbije, Bosna i Hercegovine, Crne Gore i Hrvatske. 
                   <i>Postani i ti deo naše ekipe!</i>                  </p>     
-                <img data-u="thumb" src="math.jpg" width="500" height="356" />   
+                <img data-u="thumb" src="imgs/math.jpg" width="500" height="356" />   
                 <hr>     
                 </section> 
               </article> 

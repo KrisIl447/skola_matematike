@@ -18,8 +18,9 @@
   padding-bottom: 100px;
   font-size:15px;
   text-align: center;
-
-}</style>
+  margin: 15px 300px 5px 200px;
+}
+</style>
 <body>
 <?php include 'header.php'; ?>
 
@@ -68,13 +69,13 @@
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="imgs/slika7.jpg">
-                        <img src="imgs/slika7.jpg" alt="sl8">
+                    <a class="lightbox" href="imgs/slika6.jpg">
+                        <img src="imgs/slika6.jpg" alt="sl8">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="imgs/slika8.jpg">
-                        <img src="imgs/slika8.jpg" alt="sl9">
+                    <a class="lightbox" href="imgs/slika6.jpg">
+                        <img src="imgs/slika6.jpg" alt="sl9">
                     </a>
                 </div>
             </div>
@@ -83,7 +84,11 @@
     
     </div>
     <?php include 'footer.php'; ?>
+    <!-- ************-->
 
+
+
+ <!-- ************-->
     <!-- CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 

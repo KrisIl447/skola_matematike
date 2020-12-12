@@ -44,7 +44,7 @@ li a {
 
 <nav>
   <ul>
-    <li><a href="index.php">Math is cool5 - Početna</a></li> 
+    <li><a href="index.php">Početna</a></li> 
     <li><a href="casovi.php">Časovi</a></li> 
     <li><a href="nastavnici.php">Nastavnici</a></li>
     <li><a href="iskustva.php">Iskustva</a></li>

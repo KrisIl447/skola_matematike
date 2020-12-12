@@ -1,9 +1,4 @@
-<?php
-
-include_once 'includes/dbh.php';
-//include 'header.php';
-
-?>
+<?php include_once 'includes/dbh.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +19,7 @@ body {
   padding-bottom: 100px;
   font-size:15px;
   text-align: center;
-
+  margin: 15px 300px 5px 200px;
 }
 </style>
 <?php include 'header.php'; ?>
@@ -34,6 +29,7 @@ body {
 
 </div>
 <?php
+//SELECT
 $sql="SELECT * FROM nastavnik;";
         $result= mysqli_query($conn, $sql);
         $resultCheck= mysqli_num_rows($result);

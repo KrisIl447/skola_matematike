@@ -18,7 +18,7 @@ body {
   padding-bottom: 100px;
   font-size:15px;
   text-align: center;
-
+  margin: 15px 300px 5px 200px;
 }
 
 #kontInfo{

@@ -1,3 +1,4 @@
+<?php include_once 'includes/dbh.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +17,17 @@
   padding-bottom: 100px;
   font-size:15px;
   text-align: center;
-
+  margin: 15px 300px 5px 200px;
+}
+#prijavaForma {
+    width:400px;
+    margin-top: 30px;
+    padding:10px;
+    background: #e6e6e6;
+    float:left;
+    border-radius: 10px;
+    
+    
 }
 </style>
 <?php include 'header.php'; ?>
@@ -24,14 +35,61 @@
 
 <h1>Časovi</h1>
 <p>U našoj školi imaš mogućnost da biraš da li želiš online ili časove uživo.</p>
+<hr>
 <h2>Online časovi</h2>
 <p>Online časovi su dostupni svima i sve što je potrebno jesta da se prijaviš i mi ćemo te
 kontaktirati isti dan.</p>
 <img src="imgs/laptop.jpg" alt="" width="600" height="400">
-
+<hr>
 <h2>Časovi uživo</h2>
 <p>Časovi uživo, vaši omiljeni, se održavaju na teritoriji Beograda. Moguće je da
 naš nastavnik dođe kod tebe ili ti kod nas.</p>
+<hr>
+<div id="prijavaFoma">
+  <h4>Potrebna ti je pomoć oko matematike? <br>
+<i>Prijavi se u formi ispod:</i></h4>
+<form action="includes/signup.inc.php" method="POST">
+<input type="text", name="idu", placeholder="IDUcenika">
+<br>
+<input type="text", name="first", placeholder="Ime">
+<br>
+<input type="text", name="last", placeholder="Prezime">
+<br>
+<button type="submit", name="submit">Prijavi se</button>
+
+</form>
+<tt><h6>Radujemo se našem druženju</h6></tt>
+</div>
+<!-- ************-->
+<form action=""  method="POST">
+<input type="text" name="ucenikid" placeholder="Unesi ID"/> <br>
+<input type="text" name="ime" placeholder="Unesi Ime"/><br>
+<input type="text" name="prezime" placeholder="Unesi Prezime"/><br>
+<input type="submit" name="update" value="Izmeni unete podatke"/>
+</form>
+<?php
+/*
+$sqll="SELECT * FROM ucenik;";
+$resultt= mysqli_query($conn, $sqll);
+$resulttCheck= mysqli_num_rows($resultt);
+
+if($resulttCheck > 0){
+  while($row=mysqli_fetch_assoc($resultt)){
+    
+    echo "
+    <tr>
+    <td>".$row['ucenikid']." </td>;
+     <td>".$row['ime']." </td>;
+     <td>".$row['prezime']." </td>;
+     <td> <a href='izbrisi.php?rn=$row[ucenikid]'> Delete</td>;
+      </tr>
+      ";
+  }
+}*/
+
+
+?>
 <?php include 'footer.php'; ?>
 </body>
 </html>
+
