@@ -34,6 +34,7 @@
 
 
 <h1>Časovi</h1>
+<button id="cenovnik">Cenovnik</button>
 <p>U našoj školi imaš mogućnost da biraš da li želiš online ili časove uživo.</p>
 <hr>
 <h2>Online časovi</h2>
@@ -61,7 +62,7 @@ naš nastavnik dođe kod tebe ili ti kod nas.</p>
 <tt><h6>Radujemo se našem druženju</h6></tt>
 </div>
 <!-- ************-->
-<form action=""  method="POST">
+<form action="includes/signup.inc.php"  method="POST">
 <input type="text" name="ucenikid" placeholder="Unesi ID"/> <br>
 <input type="text" name="ime" placeholder="Unesi Ime"/><br>
 <input type="text" name="prezime" placeholder="Unesi Prezime"/><br>

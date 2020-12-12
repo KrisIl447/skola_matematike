@@ -4,7 +4,7 @@ include_once 'includes/dbh.php';
 if(isset($_POST['update'])){
   $ucenikid=$_POST['ucenikid'];
 //UPDATE
-  $query="UPDATE `ucenik` SET ime=`$_POST[ime]`, prezime=`$_POST[prezime]` WHERE ucenikid=`$_POST[ucenikid]`;";
+  $query="UPDATE `ucenik` SET ime='$_POST[ime]', prezime='$_POST[prezime]' WHERE ucenikid='$_POST[ucenikid]';";
   $query_run=mysqli_query($conn, $query);
 
   if(query_run){
