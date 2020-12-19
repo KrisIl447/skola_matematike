@@ -31,19 +31,6 @@ body {
     
 }
 
-#konForma {
-    width:400px;
-    margin-top: 30px;
-    padding:10px;
-    background: #e6e6e6;
-    float:left;
-    border-radius: 10px;
-    
-    
-}
-
-
-
 </style>
 <?php include 'header.php'; ?>
 <div id="map">
@@ -53,35 +40,7 @@ body {
         </p>
     </div>
 
-    <form id="konForma">
-        <fieldset>
-            <legend>Kontaktiraj nas</legend>
-
-            <label>Vaše Ime i Prezime:</label><br>
-            <input id="imePrezime" type="text" placeholder="Unesite Vaše ime i prezime" required>
-            <br>
-
-            <label>E-mail:</label><br>
-            <input id="email" type="email" placeholder="Unesite Vaš e-mail" required>
-            <br>
-
-            <label>Oznacite vrstu časa koja vas zanima:</label>
-            <br>
-
-            <input type="checkbox">Online čas<br>
-            <input type="checkbox">Čas uživo<br>
-
-            <label>Mobilni:</label><br>
-            <input id="phone" type="tel" placeholder="(+381)" required>
-            <br>
-            <label>Poruka</label><br>
-            <textarea></textarea><br>
-
-            <input id="send" type="submit" value="Pošalji">
-            <input type="reset" value="Izbriši">
-
-        </fieldset>
-    </form>
+   
 
 <div id="kontInfo">
         <h2 id="hkont">Kontakt informacije:</h2>

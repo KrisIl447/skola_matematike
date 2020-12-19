@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Math is cool5 - Početna</title>
+    
+    <script src="./refresh.js"></script>
+     <script type="text/javascript">
+         refreshContents();
+     </script>
 </head>
 <body>
 <style>
@@ -80,7 +85,7 @@ body {
               </article> 
           </div>
 
-
+          
 
 <?php include 'footer.php'; ?>
 </body>

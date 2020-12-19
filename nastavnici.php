@@ -1,14 +1,9 @@
-<?php include_once 'includes/dbh.php'; ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Nastavnici</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="pronadji.js"></script>
 </head>
-<body>
 <style>
 body {
   background: linear-gradient(white,gray);
@@ -21,27 +16,31 @@ body {
   text-align: center;
   margin: 15px 300px 5px 200px;
 }
+
 </style>
+<body>
 <?php include 'header.php'; ?>
-
-<div>
-<b><h2>Lista naših nastavnika</h2></b>
-
-</div>
 <?php
-//SELECT
-$sql="SELECT * FROM nastavnik;";
-        $result= mysqli_query($conn, $sql);
-        $resultCheck= mysqli_num_rows($result);
-
-        if($resultCheck > 0){
-            while($row=mysqli_fetch_assoc($result)){
-                echo $row['imen']." ";
-                echo $row['prezimen']."<br>";
-            }
-        }
+include "konekcija.php";
+$sql="SELECT * FROM nastavnik ORDER BY imen ASC";
+$rezultat = $mysqli->query($sql);
 ?>
-
+<form> 
+<b>Izaberi nastavnika:</b>
+<select name="nastavnik" onchange="PrikaziNastavnika(this.value)">
+<?php
+while($red = $rezultat->fetch_object()){
+?>
+<option value="<?php echo $red->nastavnikid;?>"><?php echo $red->imen;?></option>
+<?php
+}
+?>
+</select>
+</form>
+<p><div id="popuni"><b>Podaci o selektovanom nastavniku će biti prikazani ovde. Stranica se ne učitava ponovo.</b></div></p>
+<?php
+$mysqli->close();
+?>
 <?php include 'footer.php'; ?>
 </body>
 </html>

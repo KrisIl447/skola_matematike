@@ -1,16 +1,22 @@
-<? php
+<?php
+class Connection {
 
-class Dbh{
-    private $host="localhost";
-    private $user="root";
-    private $pwd="";
-    private $dbName="skola_matematike";
+private $link;
 
-    protected function connect(){
-        $dsn= 'mysql:host='. $this->host . ';dbname=' . $this->dbName;
-        $pdo=new PDO($dsn, $this->user, $this->pwd);
-        $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO:: FETCH_ASSOC);
-        return $pdo;
-    }
+public function __construct() {
+    $this->link = null;
+}
 
+public function close() {
+    $this->link->close();
+}
+public function query($query) {
+    return $this->link->query($query);
+}
+
+public function open() {
+    $this->link = new mysqli("localhost", "root", "", "skola_matematike");
+    if (!$this->link)
+    return false;
+   return true;    
 }

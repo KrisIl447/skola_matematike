@@ -34,7 +34,9 @@
 
 
 <h1>Časovi</h1>
-<button id="cenovnik">Cenovnik</button>
+<a href="classes/cenovnik.php">
+  <button>Cenovnik</button>
+</a>
 <p>U našoj školi imaš mogućnost da biraš da li želiš online ili časove uživo.</p>
 <hr>
 <h2>Online časovi</h2>
@@ -46,6 +48,7 @@ kontaktirati isti dan.</p>
 <p>Časovi uživo, vaši omiljeni, se održavaju na teritoriji Beograda. Moguće je da
 naš nastavnik dođe kod tebe ili ti kod nas.</p>
 <hr>
+
 <div id="prijavaFoma">
   <h4>Potrebna ti je pomoć oko matematike? <br>
 <i>Prijavi se u formi ispod:</i></h4>
@@ -62,11 +65,12 @@ naš nastavnik dođe kod tebe ili ti kod nas.</p>
 <tt><h6>Radujemo se našem druženju</h6></tt>
 </div>
 <!-- ************-->
-<form action="includes/signup.inc.php"  method="POST">
+<form action="izmeni.php"  method="POST">
 <input type="text" name="ucenikid" placeholder="Unesi ID"/> <br>
 <input type="text" name="ime" placeholder="Unesi Ime"/><br>
 <input type="text" name="prezime" placeholder="Unesi Prezime"/><br>
-<input type="submit" name="update" value="Izmeni unete podatke"/>
+<button type="submit", name="update">Izmeni unete podatke</button>
+<!--<input type="submit" name="update" value="Izmeni unete podatke"/>-->
 </form>
 <?php
 /*
@@ -79,17 +83,24 @@ if($resulttCheck > 0){
     
     echo "
     <tr>
-    <td>".$row['ucenikid']." </td>;
-     <td>".$row['ime']." </td>;
-     <td>".$row['prezime']." </td>;
+    <td>".$row['ucenikid']." </td>
+     <td>".$row['ime']." </td>
+     <td>".$row['prezime']." </td>
      <td> <a href='izbrisi.php?rn=$row[ucenikid]'> Delete</td>;
       </tr>
       ";
   }
-}*/
+}*/?>
+<form action="izbrisi.php"  method="POST">
+<input type="text" name="ucenikid" placeholder="Unesi ID" required/> <br>
+<!--<input type="text" name="ime" placeholder="Unesi Ime"/><br>
+<input type="text" name="prezime" placeholder="Unesi Prezime"/><br>-->
+<!--<button type="submit", name="delete">Izbriši učenika</button>-->
+<input type="submit" name="delete" value="Izbriši učenika"/>
+</form>
 
 
-?>
+
 <?php include 'footer.php'; ?>
 </body>
 </html>
